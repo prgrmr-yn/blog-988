@@ -1,4 +1,6 @@
 <div id="<%= dom_id article %>">
+  <%= cl_image_tag( article.photo.key,
+      width: 400, height: 300, crop: :fill, width: 300, height: 200) %>
   <p>
     <strong>Title:</strong>
     <%= article.title %>
